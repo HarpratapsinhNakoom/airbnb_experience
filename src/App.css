@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar--section {
+  padding: 10px 4px;
+  background-color: rgb(228, 248, 248);
+  height: auto;
+
+  -webkit-box-shadow: -1px 4px 19px -4px rgba(0,0,0,0.8);
+  -moz-box-shadow: -1px 4px 19px -4px rgba(0,0,0,0.8);
+  box-shadow: -1px 4px 19px -4px rgba(0,0,0,0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar--logo {
+  margin: 0;
+  cursor: pointer;
+  max-width: 120px;
+  /* height: 90px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero--section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 25px 0;
+  /* min-width: 350px; */
+  max-width: 100%;
+  /* height: auto;  */
+  overflow-x: hidden;
+  /* background-color: aqua; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-text--section {
+  padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-text--section > h2 {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.hero-text--section > p {
+  font-size: larger;
+}
+.card--section {
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow: scroll; */
+  justify-content: space-evenly;
+  align-items:flex-start;
+}
+.card--item {
+  position: relative;
+  width: 300px;
+  /* height: auto; */
+  /* background-color: aqua; */
+
+  padding: 8px;
+  margin: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+.card-image--place {
+  width: 100%;
+  border-radius: 8px;
+}
+.card-text--place {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.card-light-text {
+  font-weight: 100;
+}
+.card-dark-text {
+  font-weight: 700;
+}
+.card--availability-badge {
+  position: absolute;
+  background-color: rgba(208, 221, 233, 0.37);
+  color: whitesmoke;
+  left :5%;
+  top:5%;
+  border-radius: 4px;
+  padding: 2px;
 }
